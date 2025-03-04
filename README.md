@@ -17,7 +17,7 @@ Herramienta para generar contenido HTML dinámico mediante la inserción de vari
 ## Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/reactjs-html-injector.git
+git clone https://github.com/hectorflores28/reactjs-html-injector.git
 cd reactjs-html-injector
 npm install
 npm start
