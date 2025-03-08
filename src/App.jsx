@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './App.css';
+import './styles/App.css'; 
+import './styles/responsive.css'; 
 
 function App() {
   const [variables, setVariables] = useState({
@@ -7,7 +8,7 @@ function App() {
     email: '',
     mensaje: ''
   });
-  
+
   const [htmlGenerado, setHtmlGenerado] = useState('');
 
   const handleInputChange = (e) => {

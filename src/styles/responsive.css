@@ -1,0 +1,11 @@
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .input-container {
+      width: 100%;
+    }
+  
+    .preview-container {
+      width: 100%;
+    }
+  }
+  
