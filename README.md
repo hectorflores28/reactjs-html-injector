@@ -4,7 +4,8 @@
 
 Herramienta para generar contenido HTML dinámico mediante la inserción de variables en plantillas predefinidas.
 
-![Captura de pantalla](./public/screenshot.png)
+![Formulario y Preview de Inyeccion de Variables](./public/screenshot.png)
+![Fragmento de HTML "template"](./public/screenshot2.png)
 
 ## Características principales
 
@@ -17,7 +18,7 @@ Herramienta para generar contenido HTML dinámico mediante la inserción de vari
 ## Instalación
 
 ```bash
-git clone https://github.com/tu-usuario/reactjs-html-injector.git
+git clone https://github.com/hectorflores28/reactjs-html-injector.git
 cd reactjs-html-injector
 npm install
 npm start
@@ -37,6 +38,33 @@ npm start
 - HTML5
 - CSS3
 
+## Estructura del proyecto
+
+```bash
+src/
+├── components/      # Componentes reutilizables
+├── context/         # Gestión de temas
+├── styles/          # Estilos globales
+└── App.jsx          # Núcleo de la aplicación
+```
+
+## Roadmap
+
+- [ ] Soporte para plantillas personalizadas
+- [ ] Validación de datos de entrada
+- [ ] Mejora de la interfaz con más opciones de personalización
+- [ ] Generación de código HTML avanzado
+
+## Contribución
+
+¡Las contribuciones son bienvenidas! Sigue estos pasos:
+
+1. Haz fork del proyecto
+2. Crea tu branch (`git checkout -b feature/nueva-funcionalidad`)
+3. Commit tus cambios (`git commit -m 'Add some feature'`)
+4. Push al branch (`git push origin feature/nueva-funcionalidad`)
+5. Abre un Pull Request
+
 ## Licencia
 
-Este proyecto está bajo la licencia MIT - ver LICENSE para más detalles.
+Este proyecto está bajo la licencia MIT
