@@ -1,34 +1,139 @@
+/* App.css */
 .App {
   display: flex;
-  padding: 20px;
-  gap: 30px;
+  padding: 30px;
+  gap: 40px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Capa de fondo oscuro */
+.App::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -2;
+}
+
+/* Fondo animado debajo de la capa oscura */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(45deg, 
+      rgba(217, 131, 36, 0.15) 0%, 
+      rgba(239, 220, 171, 0.2) 50%, 
+      rgba(242, 246, 208, 0.15) 100%),
+    repeating-linear-gradient(
+      -45deg,
+      #2d241a,
+      #2d241a 20px,
+      #3a2e22 20px,
+      #3a2e22 40px
+  );
+  z-index: -3;
+  animation: backgroundAnim 20s linear infinite;
+}
+.preview-container {
+  margin-top: 0px;
 }
 
 .input-container, .preview-container {
+  padding: 30px;
   flex: 1;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  background: rgba(34, 28, 21, 0.85); /* Fondo oscuro semitransparente */
+  border: 1px solid rgba(217, 131, 36, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  color: #EFDCAB; /* Texto claro */
+}
+
+.input-container:hover, .preview-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+  background: rgba(44, 35, 25, 0.9); /* Hover más oscuro */
 }
 
 input, textarea {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 8px;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(217, 131, 36, 0.5) !important;
+  color: #EFDCAB !important;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0;
+  padding: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(239, 220, 171, 0.6);
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 3px rgba(217, 131, 36, 0.3) !important;
+  border-color: #D98324 !important;
+  background: rgba(255, 255, 255, 0.15) !important;
 }
 
 button {
-  background: #61dafb;
+  background: linear-gradient(135deg, #D98324 0%, #9a5a1d 100%);
+  color: #fff;
   border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(217, 131, 36, 0.4);
+  background: linear-gradient(135deg, #c57620 0%, #8a5019 100%);
 }
 
 .html-output {
-  margin-top: 20px;
-  padding: 15px;
-  border: 1px dashed #666;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(217, 131, 36, 0.3) !important;
+  color: #EFDCAB;
+  padding: 20px;
+  border-radius: 10px;
   min-height: 200px;
+  backdrop-filter: blur(4px);
+}
+
+h2 {
+  color: #fff !important;
+  font-size: 1.8rem;
+  margin-bottom: 25px !important;
+  text-align: center;
+  position: relative;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: #D98324;
+  border-radius: 2px;
 }

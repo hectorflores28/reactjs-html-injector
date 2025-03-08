@@ -48,6 +48,7 @@ function App() {
           onChange={handleInputChange}
         />
         <textarea
+          type="text"
           name="mensaje"
           placeholder="Mensaje"
           onChange={handleInputChange}
