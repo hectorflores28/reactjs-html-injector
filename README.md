@@ -4,9 +4,6 @@
 
 Herramienta para generar contenido HTML dinámico mediante la inserción de variables en plantillas predefinidas.
 
-![Formulario y Preview de Inyeccion de Variables](./public/screenshot.png)
-![Fragmento de HTML "template"](./public/screenshot2.png)
-
 ## Características principales
 
 - Inyección dinámica de variables en HTML
@@ -23,6 +20,13 @@ cd reactjs-html-injector
 npm install
 npm start
 ```
+
+## Capturas de pantalla
+
+| Menú Principal                   | Formulario Contacto                     |
+| -------------------------------- | --------------------------------------- |
+| ![Formulario y Preview de Inyeccion de Variables](./public/screenshot.png) | ![Fragmento de HTML "template"](./public/screenshot2.png) |
+
 
 ## Cómo usar
 
