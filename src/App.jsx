@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <div className="input-container">
-        <h2>Template HTML</h2>
+        <h2>HTML Template</h2>
         <textarea
           value={template}
           onChange={handleTemplateChange}
