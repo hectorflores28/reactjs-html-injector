@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import './styles/App.css'; 
-import './styles/responsive.css'; 
 
 function App() {
-  const [variables, setVariables] = useState({
-    nombre: '',
-    email: '',
-    mensaje: ''
-  });
-
+  const [template, setTemplate] = useState('');
+  const [variables, setVariables] = useState({});
   const [htmlGenerado, setHtmlGenerado] = useState('');
 
-  const handleInputChange = (e) => {
+  const handleTemplateChange = (e) => {
+    setTemplate(e.target.value);
+    // Extraer variables del template
+    const matches = e.target.value.match(/\{!([^}]+)\}/g) || [];
+    const newVariables = {};
+    matches.forEach(match => {
+      const varName = match.slice(2, -1);
+      newVariables[varName] = '';
+    });
+    setVariables(newVariables);
+  };
+
+  const handleVariableChange = (e) => {
     setVariables({
       ...variables,
       [e.target.name]: e.target.value
@@ -19,45 +25,56 @@ function App() {
   };
 
   const generarHTML = () => {
-    const template = `
-      <div class="contenedor">
-        <h1>Hola ${variables.nombre}!</h1>
-        <p>Tu email registrado es: ${variables.email}</p>
-        <div class="mensaje">
-          ${variables.mensaje}
-        </div>
-      </div>
-    `;
-    setHtmlGenerado(template);
+    let htmlFinal = template;
+    Object.entries(variables).forEach(([key, value]) => {
+      htmlFinal = htmlFinal.replace(new RegExp(`\\{!${key}\\}`, 'g'), value);
+    });
+    setHtmlGenerado(htmlFinal);
+  };
+
+  const descargarPDF = () => {
+    console.log('Descargando PDF...');
   };
 
   return (
     <div className="App">
       <div className="input-container">
-        <h2>Ingresa tus datos</h2>
-        <input
-          type="text"
-          name="nombre"
-          placeholder="Nombre"
-          onChange={handleInputChange}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          onChange={handleInputChange}
-        />
+        <h2>Template HTML</h2>
         <textarea
-          type="text"
-          name="mensaje"
-          placeholder="Mensaje"
-          onChange={handleInputChange}
+          value={template}
+          onChange={handleTemplateChange}
+          placeholder="Pega tu template HTML aquí..."
+          className="template-input"
         />
-        <button onClick={generarHTML}>Generar HTML</button>
+        
+        {Object.keys(variables).length > 0 && (
+          <>
+            <h2>Variables</h2>
+            {Object.entries(variables).map(([key, value]) => (
+              <input
+                key={key}
+                type="text"
+                name={key}
+                value={value}
+                onChange={handleVariableChange}
+                placeholder={`Valor para ${key}`}
+              />
+            ))}
+          </>
+        )}
+        
+        <button onClick={generarHTML} className="generate-button">
+          Generar Preview
+        </button>
       </div>
 
       <div className="preview-container">
-        <h2>Preview HTML</h2>
+        <div className="preview-header">
+          <h2>Preview HTML</h2>
+          <button onClick={descargarPDF} className="download-button">
+            Descargar PDF
+          </button>
+        </div>
         <div 
           className="html-output"
           dangerouslySetInnerHTML={{ __html: htmlGenerado }}

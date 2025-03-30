@@ -1,13 +1,21 @@
-/* responsive.css */
-@media (max-width: 1080px) {
+/* Estilos responsivos */
+@media (max-width: 1200px) {
+  .App {
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
   .App {
     flex-direction: column;
-    padding: 30px;
+    padding: 20px;
+    gap: 25px;
   }
   
   .input-container, .preview-container {
-    width: 92.5%;
-    margin: 15px 0;
+    width: 100%;
+    margin: 10px 0;
     padding: 25px;
   }
   
@@ -16,29 +24,69 @@
   }
   
   h2 {
+    font-size: 1.8rem;
+  }
+
+  .html-output {
+    max-height: 50vh;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 14px 28px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+  }
+
+  .input-container, .preview-container {
+    padding: 20px;
+  }
+
+  h2 {
     font-size: 1.5rem;
+  }
+
+  input, textarea {
+    padding: 12px;
+    font-size: 14px;
   }
 
   .html-output {
     max-height: 40vh;
+    padding: 15px;
   }
 }
 
-/* @media (min-width: 1081px) {
+@media (max-width: 480px) {
   .App {
-    padding: 40px;
+    padding: 10px;
   }
-  
+
   .input-container, .preview-container {
-    position: sticky;
-    top: 40px;
-    min-height: 80vh;
-    overflow-y: auto;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  input, textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  button {
+    padding: 12px 24px;
+    font-size: 12px;
   }
 
   .html-output {
-    max-height: 90vh;
+    max-height: 35vh;
+    font-size: 12px;
   }
-} */
+} 

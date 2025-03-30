@@ -31,7 +31,7 @@ npm start
 ## Cómo usar
 
 - Completa los campos del formulario
-- Haz clic en "Generar HTML"
+- Haz clic en "Gemerar Preview"
 - Visualiza el resultado en el panel de preview
 - Copia el código generado directamente desde las herramientas de desarrollador
 
