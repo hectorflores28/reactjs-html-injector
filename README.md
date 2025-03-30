@@ -1,5 +1,7 @@
 # ReactJS HTML Injector
 
+![React](https://img.shields.io/badge/React-18.2.0-blue.svg)
+![Node.js](https://img.shields.io/badge/Node.js-14+-green.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Herramienta para generar contenido HTML dinámico mediante la inserción de variables en plantillas predefinidas.
