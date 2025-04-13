@@ -57,10 +57,5 @@ Las contribuciones son bienvenidas. Por favor:
 4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`)
 5. Abre un Pull Request
 
-## Lenguajes
-- JavaScript: 65%
-- HTML: 20%
-- CSS: 15%
-
 ## Licencia
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
