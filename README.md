@@ -71,4 +71,4 @@ Las contribuciones son bienvenidas. Por favor:
 - CSS: 15%
 
 ## License
-Este proyecto está bajo la [Licencia MIT](./LICENSE). Ver el archivo [LICENSE](./LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](./LICENSE) para más detalles.
