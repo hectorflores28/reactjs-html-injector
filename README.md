@@ -12,6 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/Licencia-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Características
+![Formulario y Preview de Inyección de Variables](./public/screenshot.png)
 - Inyección dinámica de variables en HTML
 - Vista previa en tiempo real del resultado
 - Interfaz intuitiva con 3 campos básicos
@@ -27,6 +28,7 @@
 - Node.js y NPM
 
 ## Uso
+![Fragmento de HTML "template"](./public/screenshot2.png)
 - Completa los campos del formulario
 - Haz clic en "Generar vista previa"
 - Visualiza el resultado en el panel de preview
@@ -40,11 +42,6 @@ src/
 ├── styles/         # Estilos globales
 └── App.jsx         # Núcleo de la aplicación
 ```
-
-## Capturas de pantalla
-| Menú Principal | Formulario de Contacto |
-|----------------|------------------------|
-| ![Formulario y Preview de Inyección de Variables](./public/screenshot.png) | ![Fragmento de HTML "template"](./public/screenshot2.png) |
 
 ## Contribución
 Las contribuciones son bienvenidas. Por favor, abre un issue o envía un pull request.
