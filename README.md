@@ -29,14 +29,6 @@ Herramienta para generar contenido HTML dinámico mediante la inserción de vari
 - Generación de código HTML listo para usar
 - Exportación a PDF
 
-## Installation
-```bash
-git clone https://github.com/hectorflores28/reactjs-html-injector.git
-cd reactjs-html-injector
-npm install
-npm start
-```
-
 ## Usage
 - Completa los campos del formulario
 - Haz clic en "Generar Preview"
