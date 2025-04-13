@@ -1,41 +1,41 @@
-# ReactJS HTML Injector
+# Inyector HTML para ReactJS
 
 ![React](https://img.shields.io/badge/React-18+-61DAFB.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg)
 ![HTML](https://img.shields.io/badge/HTML-5-E34F26.svg)
 ![CSS](https://img.shields.io/badge/CSS-3-1572B6.svg)
-![PDF](https://img.shields.io/badge/PDF-Generator-red.svg)
-![html2pdf.js](https://img.shields.io/badge/html2pdf.js-Latest-blue.svg)
-![Template](https://img.shields.io/badge/Template-Injection-success.svg)
-![Dynamic](https://img.shields.io/badge/Dynamic-Variables-orange.svg)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![PDF](https://img.shields.io/badge/PDF-Generador-red.svg)
+![html2pdf.js](https://img.shields.io/badge/html2pdf.js-Última_versión-blue.svg)
+![Template](https://img.shields.io/badge/Inyección-Plantillas-success.svg)
+![Dynamic](https://img.shields.io/badge/Variables-Dinámicas-orange.svg)
+![Status](https://img.shields.io/badge/Estado-Activo-brightgreen.svg)
+[![License: MIT](https://img.shields.io/badge/Licencia-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-## About
+## Acerca del proyecto
 Herramienta para generar contenido HTML dinámico mediante la inserción de variables en plantillas predefinidas. Permite la generación de PDFs a partir de templates HTML con variables dinámicas.
 
-## Technologies
+## Tecnologías
 - React 18+
 - JavaScript ES6+
-- HTML5 & CSS3
+- HTML5 y CSS3
 - html2pdf.js
-- Node.js & NPM
+- Node.js y NPM
 
-## Features
+## Características
 - Inyección dinámica de variables en HTML
-- Preview en tiempo real del resultado
+- Vista previa en tiempo real del resultado
 - Interfaz intuitiva con 3 campos básicos
 - Diseño responsive incorporado
 - Generación de código HTML listo para usar
 - Exportación a PDF
 
-## Usage
+## Uso
 - Completa los campos del formulario
-- Haz clic en "Generar Preview"
+- Haz clic en "Generar vista previa"
 - Visualiza el resultado en el panel de preview
 - Descarga el PDF generado
 
-## Project Structure
+## Estructura del proyecto
 ```bash
 src/
 ├── components/      # Componentes reutilizables
@@ -44,23 +44,23 @@ src/
 └── App.jsx         # Núcleo de la aplicación
 ```
 
-## Screenshots
-| Menú Principal | Formulario Contacto |
-|----------------|---------------------|
-| ![Formulario y Preview de Inyeccion de Variables](./public/screenshot.png) | ![Fragmento de HTML "template"](./public/screenshot2.png) |
+## Capturas de pantalla
+| Menú Principal | Formulario de Contacto |
+|----------------|------------------------|
+| ![Formulario y Preview de Inyección de Variables](./public/screenshot.png) | ![Fragmento de HTML "template"](./public/screenshot2.png) |
 
-## Contributing
+## Contribuciones
 Las contribuciones son bienvenidas. Por favor:
-1. Haz fork del proyecto
-2. Crea tu branch (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit tus cambios (`git commit -m 'Add some feature'`)
-4. Push al branch (`git push origin feature/nueva-funcionalidad`)
+1. Haz un fork del proyecto
+2. Crea tu rama (`git checkout -b feature/nueva-funcionalidad`)
+3. Commitea tus cambios (`git commit -m 'Agrega una funcionalidad'`)
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`)
 5. Abre un Pull Request
 
-## Languages
+## Lenguajes
 - JavaScript: 65%
 - HTML: 20%
 - CSS: 15%
 
-## License
-Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](./LICENSE) para más detalles.
+## Licencia
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
