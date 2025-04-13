@@ -1,9 +1,5 @@
 # ReactJS HTML Injector
 
-<<<<<<< HEAD
-![React](https://img.shields.io/badge/React-18.2.0-blue.svg)
-![Node.js](https://img.shields.io/badge/Node.js-14+-green.svg)
-=======
 ![React](https://img.shields.io/badge/React-18+-61DAFB.svg)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E.svg)
 ![HTML](https://img.shields.io/badge/HTML-5-E34F26.svg)
@@ -13,7 +9,6 @@
 ![Template](https://img.shields.io/badge/Template-Injection-success.svg)
 ![Dynamic](https://img.shields.io/badge/Dynamic-Variables-orange.svg)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)
->>>>>>> 5ad38ac (docs: actualización del README con nueva estructura y badges)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## About
@@ -76,4 +71,4 @@ Las contribuciones son bienvenidas. Por favor:
 - CSS: 15%
 
 ## License
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
+Este proyecto está bajo la [Licencia MIT](./LICENSE). Ver el archivo [LICENSE](./LICENSE) para más detalles.
